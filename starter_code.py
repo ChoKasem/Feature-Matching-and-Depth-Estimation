@@ -300,10 +300,7 @@ for sample_name in test_list:
     
     # Draw matches
     img = cv.drawMatches(img_left, kp_left, img_right, kp_right, matches, None, matchesMask=mask,flags=cv.DrawMatchesFlags_NOT_DRAW_SINGLE_POINTS)
-    # p1 = plt.figure(1)
     plt.imshow(img)
-    # p2 = plt.figure(2)
-    # plt.imshow(depth_image)
     plt.show()
 # print(format(RMSE_sum,".4f"))
 output_file.close()
